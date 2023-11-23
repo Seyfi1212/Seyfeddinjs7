@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="textInput">
+<button onclick="openInput()" id="openButton">Open</button>
+<button onclick="closeInput()" id="closeButton" disabled>Close</button>
+
+<script>
+  function openInput() {
+      document.querySelector("#textInput").disabled = false;
+      document.querySelector("#openButton").disabled = true;
+      document.querySelector("#closeButton").disabled = false;
+  }
+
+  function closeInput() {
+      document.querySelector("#textInput").disabled = true;
+      document.querySelector("#openButton").disabled = false;
+      document.querySelector("#closeButton").disabled = true;
+  }
+  function openInput() {
+      document.querySelector("#textInput").disabled = false;
+      document.querySelector("#openButton").disabled = true;
+      document.querySelector("#closeButton").disabled = false;
+  }
+
+  function closeInput() {
+      document.querySelector("#textInput").disabled = true;
+      document.querySelector("#openButton").disabled = false;
+      document.querySelector("#closeButton").disabled = true;
+  }
+  
+</script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <input type="radio" id="yasli" name="yas" value="Yaşlilar">
+        <label for="yasli">Yaşlilar üçün</label>
+    </div>
+    <div>
+        <input type="radio" id="boyuk" name="yas" value="Böyüklər">
+        <label for="boyuk">Böyüklər üçün</label>
+    </div>
+    <div>
+        <input type="radio" id="kicik" name="yas" value="Kiçiklər">
+        <label for="kicik">Kiçiklər üçün</label>
+    </div>
+    <button id="addButton">Add</button>
+
+    <script>
+    
+    let radio = document.querySelector('#yas');
+            addButton.addEventListener('click', function() {
+        
+            for (let i = 0; i < radio.length; i++) {
+                if (radio[i].checked) {
+                    console.log("Seçilmiş radio input: " + radio[i].value);
+                    break;
+                }
+            }
+        });
+    </script>
+</body>
+</html>
